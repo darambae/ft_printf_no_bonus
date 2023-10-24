@@ -6,9 +6,10 @@
 /*   By: dabae <dabae@student.42perpignan.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 15:12:02 by dabae             #+#    #+#             */
-/*   Updated: 2023/10/24 11:49:25 by dabae            ###   ########.fr       */
+/*   Updated: 2023/10/24 14:31:40 by dabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "ft_printf.h"
 
 static int	ft_count_digit(unsigned int n)
 {

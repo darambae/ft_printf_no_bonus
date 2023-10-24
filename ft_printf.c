@@ -6,9 +6,11 @@
 /*   By: dabae <dabae@student.42perpignan.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 10:58:27 by dabae             #+#    #+#             */
-/*   Updated: 2023/10/24 11:37:41 by dabae            ###   ########.fr       */
+/*   Updated: 2023/10/24 15:54:34 by dabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "ft_printf.h"
+
 static	int	ft_print_holder(const char *str, int n, va_list ap)
 {
 	int	num_print;

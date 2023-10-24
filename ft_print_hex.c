@@ -6,17 +6,16 @@
 /*   By: dabae <dabae@student.42perpignan.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 11:41:04 by dabae             #+#    #+#             */
-/*   Updated: 2023/10/24 11:46:17 by dabae            ###   ########.fr       */
+/*   Updated: 2023/10/24 14:33:41 by dabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "ft_printf.h"
 
 static int	ft_count_digit(unsigned int n)
 {
 	int	count;
 
 	count = 1;
-	if (n < 0)
-		n *= -1;
 	if (n > 15)
 	{
 		while (n > 15)
@@ -54,9 +53,7 @@ int	ft_print_hex(unsigned int n, int capital)
 	char		*res;
 
 	count = ft_count_digit(n);
-	if (n < 0)
-		n *= -1;
-	else if (n == 0)
+	if (n == 0)
 		count = 1;
 	res = (char *)malloc(sizeof(char) * (count + 1));
 	if (!res)

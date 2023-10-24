@@ -6,9 +6,10 @@
 /*   By: dabae <dabae@student.42perpignan.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 11:33:07 by dabae             #+#    #+#             */
-/*   Updated: 2023/10/24 11:54:05 by dabae            ###   ########.fr       */
+/*   Updated: 2023/10/24 14:31:04 by dabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "ft_printf.h"
 
 int	ft_print_str(const char *str)
 {

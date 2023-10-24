@@ -6,7 +6,7 @@
 /*   By: dabae <dabae@student.42perpignan.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 15:49:30 by dabae             #+#    #+#             */
-/*   Updated: 2023/10/23 18:04:32 by dabae            ###   ########.fr       */
+/*   Updated: 2023/10/24 12:00:27 by dabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef FT_PRINTF_H
@@ -15,6 +15,7 @@
 # include <stdarg.h>
 # include <stdlib.h>
 # include <string.h>
+# include "libft/libft.h"
 
 int	ft_printf(const char *format, ...);
 int     ft_print_char(char c);

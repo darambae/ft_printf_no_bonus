@@ -6,13 +6,11 @@
 /*   By: dabae <dabae@student.42perpignan.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 11:26:19 by dabae             #+#    #+#             */
-/*   Updated: 2023/10/23 11:32:29 by dabae            ###   ########.fr       */
+/*   Updated: 2023/10/24 11:37:02 by dabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_print_char(char c)
 {
-	if (!c)
-		return (0);
 	return (write(1, &c, 1));
 }

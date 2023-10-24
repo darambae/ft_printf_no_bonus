@@ -6,7 +6,7 @@
 /*   By: dabae <dabae@student.42perpignan.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 10:58:27 by dabae             #+#    #+#             */
-/*   Updated: 2023/10/23 18:15:40 by dabae            ###   ########.fr       */
+/*   Updated: 2023/10/24 11:37:41 by dabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 static	int	ft_print_holder(const char *str, int n, va_list ap)
@@ -59,6 +59,8 @@ int	ft_printf(const char *format, ...)
 	int		res;
 	va_list	ap;
 
+	if (!format)
+		return (0);
 	res = 0;
 	va_start(ap, format);
 	res = ft_parse_format(format, ap);

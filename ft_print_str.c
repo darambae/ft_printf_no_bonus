@@ -6,7 +6,7 @@
 /*   By: dabae <dabae@student.42perpignan.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 11:33:07 by dabae             #+#    #+#             */
-/*   Updated: 2023/10/23 11:40:53 by dabae            ###   ########.fr       */
+/*   Updated: 2023/10/24 11:54:05 by dabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_print_str(const char *str)
 	i = 0;
 	while (str[i])
 	{
-		write(1, &s[i], 1);
+		write(1, &str[i], 1);
 		i++;
 	}
 	return (i);

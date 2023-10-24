@@ -6,7 +6,7 @@
 /*   By: dabae <dabae@student.42perpignan.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 11:41:04 by dabae             #+#    #+#             */
-/*   Updated: 2023/10/23 18:21:43 by dabae            ###   ########.fr       */
+/*   Updated: 2023/10/24 11:46:17 by dabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,14 +49,19 @@ static void ft_fill_hex(char *res, unsigned int n, int capital)
 		
 int	ft_print_hex(unsigned int n, int capital)
 {
+	int	num_print;
 	int	count;
-	char		res[9];
+	char		*res;
 
 	count = ft_count_digit(n);
 	if (n < 0)
 		n *= -1;
-	else if (n == 0);
+	else if (n == 0)
 		count = 1;
+	res = (char *)malloc(sizeof(char) * (count + 1));
+	if (!res)
+		return 	(0);
 	ft_fill_hex(res + count - 1, n, capital);
-	return (ft_print_str(res));
+	num_print = ft_print_str(res);
+	return (num_print);
 }

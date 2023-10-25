@@ -6,7 +6,7 @@
 /*   By: dabae <dabae@student.42perpignan.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 11:41:04 by dabae             #+#    #+#             */
-/*   Updated: 2023/10/24 14:33:41 by dabae            ###   ########.fr       */
+/*   Updated: 2023/10/25 14:52:05 by dabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "ft_printf.h"
@@ -27,12 +27,17 @@ static int	ft_count_digit(unsigned int n)
 	return (count);
 }
 
-static void ft_fill_hex(char *res, unsigned int n, int capital)
+static void	ft_fill_hex(char *res, unsigned int n, int capital)
 {
-	const char	*hex_up = "0123456789ABCDEF";
-	const char	*hex_low = "0123456789abcdef";
+	char	*hex_up;
+	char	*hex_low;
+
+	hex_up = ft_strdup("0123456789ABCDEF");
+	hex_low = ft_strdup("0123456789abcdef");
+	if (!hex_up || !hex_low)
+		return ;
 	if (n == 0)
-		res[0] = '0';
+		*res = '0';
 	else
 	{
 		while (n)
@@ -44,21 +49,25 @@ static void ft_fill_hex(char *res, unsigned int n, int capital)
 			n /= 16;
 		}
 	}
+	free(hex_up);
+	free(hex_low);
 }
-		
+
 int	ft_print_hex(unsigned int n, int capital)
 {
-	int	num_print;
-	int	count;
-	char		*res;
+	int		num_print;
+	int		count;
+	char	*res;
 
 	count = ft_count_digit(n);
 	if (n == 0)
 		count = 1;
 	res = (char *)malloc(sizeof(char) * (count + 1));
 	if (!res)
-		return 	(0);
+		return (0);
+	ft_memset(res, '\0', count + 1);
 	ft_fill_hex(res + count - 1, n, capital);
 	num_print = ft_print_str(res);
+	free(res);
 	return (num_print);
 }

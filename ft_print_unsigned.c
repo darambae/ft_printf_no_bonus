@@ -6,7 +6,7 @@
 /*   By: dabae <dabae@student.42perpignan.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 15:12:02 by dabae             #+#    #+#             */
-/*   Updated: 2023/10/24 14:31:40 by dabae            ###   ########.fr       */
+/*   Updated: 2023/10/25 11:57:54 by dabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "ft_printf.h"
@@ -30,7 +30,7 @@ static int	ft_count_digit(unsigned int n)
 static char	*ft_unsigned_itoa(unsigned int n)
 {
 	char	*res;
-	int	count;
+	int		count;
 
 	count = ft_count_digit(n);
 	res = (char *)malloc(sizeof(char) * (count + 1));
@@ -48,7 +48,7 @@ static char	*ft_unsigned_itoa(unsigned int n)
 int	ft_print_unsigned(unsigned int n)
 {
 	char	*arr;
-	int	num_print;
+	int		num_print;
 
 	arr = ft_unsigned_itoa(n);
 	num_print = ft_print_str(arr);

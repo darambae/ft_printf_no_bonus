@@ -6,7 +6,7 @@
 /*   By: dabae <dabae@student.42perpignan.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 10:58:27 by dabae             #+#    #+#             */
-/*   Updated: 2023/10/24 15:54:34 by dabae            ###   ########.fr       */
+/*   Updated: 2023/10/25 11:20:00 by dabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "ft_printf.h"
@@ -41,10 +41,10 @@ static	int	ft_parse_format(const char *str, va_list ap)
 	int	num_print;
 
 	num_print = 0;
-	i = -1;
-	while (str[++i])
+	i = 0;
+	while (str[i])
 	{
-		if (str[i] == '%' && ft_strchr("cspdixXu%", str[i + 1]))
+		if (str[i] == '%' && ft_strchr("cspdixXu%", str[i + 1]) && str[i + 1])
 		{
 			num_print += ft_print_holder(str, i + 1, ap);
 			i++;

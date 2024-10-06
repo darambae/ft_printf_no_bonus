@@ -14,14 +14,13 @@
   - [Project Structure](#project-structure)
     
 ## Introduction
+Here’s a more natural-sounding introduction for the **ft_printf** project in English, French, and Korean:
 
-ft_printf is a custom implementation of the standard C library function `printf`. This project is part of the 42 school curriculum, designed to deepen understanding of variadic functions, formatted output, and overall C programming skills.
+**ft_printf** is a C project designed to recreate the functionality of the standard `printf` function found in the C standard library. This custom implementation supports a variety of format specifiers, allowing for the formatting of strings, integers, floating-point numbers, and other data types. The goal of **ft_printf** is to deepen your understanding of variable argument lists and string manipulation in C while providing a flexible way to produce formatted output.
 
-ft_printf est une implémentation personnalisée de la fonction de bibliothèque standard C `printf`. Ce projet fait partie du programme de l'école 42, conçu pour approfondir la compréhension des fonctions variadiques, de la sortie formatée et des compétences en programmation C.
+**ft_printf** est un projet en C qui vise à reproduire la fonctionnalité de la fonction standard `printf` de la bibliothèque standard C. Cette implémentation personnalisée prend en charge divers spécificateurs de format, permettant de formater des chaînes de caractères, des entiers, des nombres à virgule flottante et d'autres types de données. L'objectif de **ft_printf** est d'approfondir votre compréhension des listes d'arguments variables et de la manipulation de chaînes en C, tout en offrant une méthode flexible pour produire des sorties formatées.
 
-ft_printf는 표준 C 라이브러리 함수 `printf`의 맞춤 구현입니다. 이 프로젝트는 42 학교 커리큘럼의 일부로, 가변 인수 함수, 형식화된 출력 및 전반적인 C 프로그래밍 기술에 대한 이해를 깊게 하기 위해 설계되었습니다.
-
----
+**ft_printf**는 C 프로젝트로, C 표준 라이브러리에 있는 표준 `printf` 기능을 재현하는 것을 목표로 합니다. 이 사용자 정의 구현은 문자열, 정수, 부동 소수점 숫자 및 기타 데이터 유형의 형식을 지정할 수 있는 다양한 형식 지정자를 지원합니다. **ft_printf**의 목표는 C에서 가변 인수 목록과 문자열 조작에 대한 이해를 깊게 하면서 형식화된 출력을 생성할 수 있는 유연한 방법을 제공하는 것입니다.
 
 ## Feature
 

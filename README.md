@@ -1,8 +1,8 @@
 # ft_printf
 ### Languages
 
-- [French version](https://github.com/darambae/ft_printf_no_bonus/blob/main/readme_fr.md)
-- [Korean version](https://github.com/darambae/ft_printf_no_bonus/blob/main/readme_kr.md)
+- [French version](./readme_fr.md)
+- [Korean version](./readme_kr.md)
 
 ## Table of Contents
 

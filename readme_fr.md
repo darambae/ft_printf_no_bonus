@@ -29,7 +29,7 @@
 Pour installer **ft_printf**, clonez le dépôt et compilez le code en utilisant `make` :
 
 ```
-git clone https://github.com/darambae/ft_printf.git
+git clone https://github.com/darambae/ft_printf_no_bonus.git
 cd ft_printf
 make
 ```

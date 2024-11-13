@@ -27,7 +27,7 @@
 **ft_printf**를 설치하려면, 리포지토리를 클론한 후 `make` 명령어로 코드를 컴파일하세요:
 
 ```
-git clone https://github.com/darambae/ft_printf.git
+git clone https://github.com/darambae/ft_printf_no_bonus.git
 cd ft_printf
 make
 ```
